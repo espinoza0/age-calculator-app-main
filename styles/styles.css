@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", system-ui;
+    font-size: 16px;
+    background-color: var(--Off-white);
+}
+:root{
+    /* Primary */
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    /* Neutral  */
+
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    /* border: 1px solid red; */
+    align-items: center;
+}
+button{
+    cursor: pointer;
+    padding: 1.3rem;
+    color: transparent;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--Purple);
+    transition: background-color .1s ease-in-out;
+    transform: translateX(-2.5rem);
+}
+button:hover{
+    background-color: var(--Off-black);
+}
+input{
+    /* width: 100%; */
+    width: 10rem;
+    border: none;
+    outline: 1px solid var(--Light-grey);
+    border-radius: .3rem;
+}
+input:focus{
+    outline-color: var(--Purple);
+}
+span{
+    color: var(--Purple);
+}
+.age-calc-container{
+    max-width: 75rem;
+    border: 1px solid red;
+    /* min-width: 50rem; */
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 1.3rem 1.3rem 10rem 1.3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: rem; */
+}
+.age-calc{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.inputs{
+    display: flex;
+    gap: 2rem;
+    /* border: 1px solid blue; */
+}
+.inputs > div{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: .3rem;
+}
+.inputs label{
+    color: var(--Smokey-grey);
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+}
+.inputs input{
+    font-weight: bold;
+    font-size: 2rem;
+    padding: .5rem 0 .5rem 1rem;
+}
+.h-line{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+}
+.h-line div:not(.line){
+    display: flex;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    height: .75px;
+    background-color: var(--Light-grey);
+}
+.err{
+    color: var(--Light-red);
+}
+.input-err{
+    outline-color: var(--Light-red);
+}
+span.err{
+    font-style: italic;
+    margin-top: .2rem;
+}
+
+@media screen and (max-width: 700px){
+    .age-calc-container{
+        /* min-width: 10rem;
+        background-color: rebeccapurple; */
+        width: 60%;
+    }
+}
