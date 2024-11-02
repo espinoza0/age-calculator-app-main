@@ -119,7 +119,6 @@ function calculate() {
 function isInputEmpty() {
     errors.forEach( err =>{
         let input = err.previousElementSibling;
-        // console.log(input)
         if (input.value.trim() == ""){
             console.log(input)
             console.log(err.innerHTML)
