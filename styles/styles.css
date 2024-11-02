@@ -6,6 +6,10 @@ body{
     font-family: "Poppins", system-ui;
     font-size: 16px;
     background-color: var(--Off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 :root{
     /* Primary */
@@ -21,13 +25,9 @@ body{
     --Off-black: hsl(0, 0%, 8%);
 }
 #container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    /* background-color: red; */
-    /* border: 1px solid red; */
-    align-items: center;
+    width: 100%;
+    border: 1px solid blue;
+    padding: 1rem;
 }
 button{
     cursor: pointer;
@@ -56,7 +56,8 @@ span{
     color: var(--Purple);
 }
 .age-calc-container{
-    max-width: 75rem;
+    width: 100%;
+    max-width: 55rem;
     border: 1px solid red;
     /* min-width: 50rem; */
     margin: 0 auto;
@@ -75,12 +76,10 @@ span{
 .inputs{
     display: flex;
     gap: 2rem;
-    /* border: 1px solid blue; */
 }
 .inputs > div{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
     gap: .3rem;
 }
 .inputs label{
